@@ -1,0 +1,108 @@
+@import "./variable";
+@import "./reset";
+@import "./mixin";
+
+
+main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: $lightGray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card{
+    max-width: 680px;
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 16px -4px $grayishBlue;
+    @include mobile{
+        margin: 24px;
+    }
+}
+
+.top-card{
+    background-color: #fff;
+    padding: 40px;
+    & h2{
+        @include title;
+        margin-bottom: 32px;
+    }
+    & h3{
+        color: $brightYellow;
+        margin-bottom: 20px;
+    }
+
+    & p{
+        line-height: 1.6;
+        color: $grayishBlue;
+    }
+}
+
+.bottom-card{
+    display: flex;
+
+    @include mobile{
+        flex-direction: column;
+
+    }
+    &-item{
+        width: 50%;
+        padding: 40px;
+
+        @include mobile{
+            width: 100%;
+        }
+
+        &:nth-child(1){
+            background-color: $cyan;
+            & h2{
+                color: #fff;
+                font-size: 22px;
+                margin-bottom: 20px;
+            }
+            & h3{
+                font-size: 32px;
+                font-weight: 700;
+                color: #fff;
+                position: relative;
+                margin-bottom: 12px;
+                & span{
+                    font-size: 16px;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    margin-left: 12px;
+                    color: $lightGray;
+                }
+            }
+
+            & p{
+                color: #fff;
+                margin-bottom: 20px;
+            }
+            & .btn{
+                @include btn;
+            }
+        }
+
+        &:nth-child(2){
+            background-color: #4abebd;
+            & h2{
+                color: #fff;
+                margin-bottom: 20px;
+            }
+            & p{
+                color: $lightGray;
+                padding-right: 50px;
+                line-height: 1.2;
+                font-weight: 400;
+            }
+        }
+    }
+}

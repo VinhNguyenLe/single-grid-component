@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #e5eff5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card {
+  max-width: 680px;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 16px -4px #98a6bd;
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    margin: 24px;
+  }
+}
+
+.top-card {
+  background-color: #fff;
+  padding: 40px;
+}
+
+.top-card h2 {
+  color: #2ab2af;
+  font-size: 26px;
+  margin-bottom: 32px;
+}
+
+.top-card h3 {
+  color: #c0df34;
+  margin-bottom: 20px;
+}
+
+.top-card p {
+  line-height: 1.6;
+  color: #98a6bd;
+}
+
+.bottom-card {
+  display: flex;
+}
+
+@media screen and (max-width: 500px) {
+  .bottom-card {
+    flex-direction: column;
+  }
+}
+
+.bottom-card-item {
+  width: 50%;
+  padding: 40px;
+}
+
+@media screen and (max-width: 500px) {
+  .bottom-card-item {
+    width: 100%;
+  }
+}
+
+.bottom-card-item:nth-child(1) {
+  background-color: #2ab2af;
+}
+
+.bottom-card-item:nth-child(1) h2 {
+  color: #fff;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.bottom-card-item:nth-child(1) h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.bottom-card-item:nth-child(1) h3 span {
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 12px;
+  color: #e5eff5;
+}
+
+.bottom-card-item:nth-child(1) p {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.bottom-card-item:nth-child(1) .btn {
+  width: 260px;
+  height: 54px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 54px;
+  background-color: #c0df34;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 0 16px -6px rgba(0, 0, 0, 0.7);
+}
+
+.bottom-card-item:nth-child(2) {
+  background-color: #4abebd;
+}
+
+.bottom-card-item:nth-child(2) h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.bottom-card-item:nth-child(2) p {
+  color: #e5eff5;
+  padding-right: 50px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=style.css.map */
